@@ -1,0 +1,1 @@
+<view class="uni-grid-wrap data-v-7f6e37ee"><view class="{{['uni-grid data-v-7f6e37ee vue-ref',(showBorder)?'uni-grid--border':'']}}" style="{{'border-left-color:'+(borderColor)+';'}}" id="{{elId}}" data-ref="uni-grid"><slot></slot></view></view>
