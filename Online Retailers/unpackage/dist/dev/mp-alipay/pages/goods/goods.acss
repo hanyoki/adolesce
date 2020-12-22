@@ -1,0 +1,817 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background-color: #f8f8f8;
+}
+@-webkit-keyframes showPopup {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes showPopup {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@-webkit-keyframes hidePopup {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+@keyframes hidePopup {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes showLayer {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+}
+@keyframes showLayer {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+}
+@-webkit-keyframes hideLayer {
+0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes hideLayer {
+0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+.icon {
+  font-size: 26rpx;
+}
+.status {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: #f1f1f1;
+  -webkit-transition: opacity 0.05s linear;
+  transition: opacity 0.05s linear;
+}
+.header {
+  width: 100%;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header .before,
+.header .after {
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  -webkit-transition: opacity 0.05s linear;
+  transition: opacity 0.05s linear;
+}
+.header .before .back,
+.header .after .back {
+  width: 125rpx;
+  height: 60rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.header .before .back .icon,
+.header .after .back .icon {
+  margin-left: -10%;
+  width: 60rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 42rpx;
+}
+.header .before .middle,
+.header .after .middle {
+  width: 100%;
+}
+.header .before .icon-btn,
+.header .after .icon-btn {
+  width: 125rpx;
+  height: 60rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.header .before .icon-btn .icon,
+.header .after .icon-btn .icon {
+  width: 60rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 42rpx;
+}
+.header .before .icon-btn .icon:first-child,
+.header .after .icon-btn .icon:first-child {
+  margin-right: 5rpx;
+}
+.header .before .back .icon {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.header .before .icon-btn .icon {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.header .after {
+  background-color: #f1f1f1;
+}
+.header .after .back .icon {
+  color: #666;
+}
+.header .after .icon-btn .icon {
+  color: #666;
+}
+.header .after .middle {
+  font-size: 32rpx;
+  height: 90rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 7%;
+}
+.header .after .middle view {
+  width: 33.33333%;
+  padding: 0 3%;
+  margin: 0 3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.header .after .middle view.on {
+  margin-bottom: -4rpx;
+  color: #f47952;
+  border-bottom: solid 4rpx #f47952;
+}
+.swiper-box {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+}
+.swiper-box swiper {
+  width: 100%;
+  height: 100vw;
+}
+.swiper-box swiper swiper-item image {
+  width: 100%;
+  height: 100vw;
+}
+.swiper-box .indicator {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 25rpx;
+  height: 40rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
+  font-size: 22rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.info-box {
+  width: 92%;
+  padding: 20rpx 4%;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.goods-info .price {
+  font-size: 46rpx;
+  font-weight: 600;
+  color: #f47925;
+}
+.goods-info .title {
+  font-size: 30rpx;
+}
+.spec .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 0 30rpx 0;
+}
+.spec .row .text {
+  font-size: 24rpx;
+  color: #a2a2a2;
+  margin-right: 20rpx;
+}
+.spec .row .content {
+  font-size: 28rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.spec .row .content .serviceitem {
+  margin-right: 10rpx;
+}
+.spec .row .content .sp {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.spec .row .content .sp view {
+  background-color: #f6f6f6;
+  padding: 5rpx 10rpx;
+  color: #999;
+  margin-right: 10rpx;
+  font-size: 20rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+}
+.spec .row .content .sp view.on {
+  border: solid 1rpx #f47952;
+  padding: 4rpx 8rpx;
+}
+.spec .row .arrow {
+  position: absolute;
+  right: 4%;
+}
+.spec .row .arrow .icon {
+  color: #ccc;
+}
+.comments .row {
+  width: 100%;
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 0 30rpx 0;
+}
+.comments .row .text {
+  font-size: 30rpx;
+}
+.comments .row .arrow {
+  font-size: 28rpx;
+  position: absolute;
+  right: 4%;
+  color: #17e6a1;
+}
+.comments .row .arrow .show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.comments .row .arrow .show .icon {
+  color: #17e6a1;
+}
+.comments .comment {
+  width: 100%;
+}
+.comments .comment .user-info {
+  width: 100%;
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.comments .comment .user-info .face {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.comments .comment .user-info .face image {
+  width: 40rpx;
+  height: 40rpx;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.comments .comment .user-info .username {
+  font-size: 24rpx;
+  color: #999;
+}
+.comments .comment .content {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+.description .title {
+  width: 100%;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 26rpx;
+  color: #999;
+}
+.footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 99rpx;
+  border-top: solid 1rpx #eee;
+  background-color: #fff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer .icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 80rpx;
+  margin-left: -4%;
+}
+.footer .icons .box {
+  width: 80rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.footer .icons .box .icon {
+  font-size: 40rpx;
+  color: #828282;
+}
+.footer .icons .box .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 22rpx;
+  color: #666;
+}
+.footer .btn {
+  height: 80rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-right: -2%;
+}
+.footer .btn .joinCart,
+.footer .btn .buy {
+  height: 80rpx;
+  padding: 0 40rpx;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+}
+.footer .btn .joinCart {
+  background-color: #f0b46c;
+}
+.footer .btn .buy {
+  background-color: #f06c7a;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: none;
+}
+.popup .mask {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 21;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.popup .layer {
+  position: fixed;
+  z-index: 22;
+  bottom: -70%;
+  width: 92%;
+  padding: 0 4%;
+  height: 70%;
+  -webkit-border-radius: 20rpx 20rpx 0 0;
+          border-radius: 20rpx 20rpx 0 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: space-between;
+          align-content: space-between;
+}
+.popup .layer .content {
+  width: 100%;
+  padding: 20rpx 0;
+}
+.popup .layer .btn {
+  width: 100%;
+  height: 100rpx;
+}
+.popup .layer .btn .button {
+  width: 100%;
+  height: 80rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #f47952;
+  font-size: 28rpx;
+}
+.popup.show {
+  display: block;
+}
+.popup.show .mask {
+  -webkit-animation: showPopup 0.2s linear both;
+          animation: showPopup 0.2s linear both;
+}
+.popup.show .layer {
+  -webkit-animation: showLayer 0.2s linear both;
+          animation: showLayer 0.2s linear both;
+}
+.popup.hide {
+  display: block;
+}
+.popup.hide .mask {
+  -webkit-animation: hidePopup 0.2s linear both;
+          animation: hidePopup 0.2s linear both;
+}
+.popup.hide .layer {
+  -webkit-animation: hideLayer 0.2s linear both;
+          animation: hideLayer 0.2s linear both;
+}
+.popup.none {
+  display: none;
+}
+.popup.service .row {
+  margin: 30rpx 0;
+}
+.popup.service .row .title {
+  font-size: 30rpx;
+  margin: 10rpx 0;
+}
+.popup.service .row .description {
+  font-size: 28rpx;
+  color: #999;
+}
+.popup.spec .title {
+  font-size: 30rpx;
+  margin: 30rpx 0;
+}
+.popup.spec .sp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.popup.spec .sp view {
+  font-size: 28rpx;
+  padding: 5rpx 20rpx;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
+  margin: 0 30rpx 20rpx 0;
+  background-color: #f6f6f6;
+}
+.popup.spec .sp view.on {
+  padding: 3rpx 18rpx;
+  border: solid 1rpx #f47925;
+}
+.popup.spec .length {
+  margin-top: 30rpx;
+  border-top: solid 1rpx #aaa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-top: 20rpx;
+}
+.popup.spec .length .text {
+  font-size: 30rpx;
+}
+.popup.spec .length .number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.popup.spec .length .number .input {
+  width: 80rpx;
+  height: 60rpx;
+  margin: 0 10rpx;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  text-align: center;
+}
+.popup.spec .length .number .input input {
+  width: 80rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  text-align: center;
+  font-size: 26rpx;
+}
+.popup.spec .length .number .sub, .popup.spec .length .number .add {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #f3f3f3;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
+}
+.popup.spec .length .number .sub .icon, .popup.spec .length .number .add .icon {
+  font-size: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.share {
+  display: none;
+}
+.share.show {
+  display: block;
+}
+.share.show .mask {
+  -webkit-animation: showPopup 0.15s linear both;
+          animation: showPopup 0.15s linear both;
+}
+.share.show .layer {
+  -webkit-animation: showLayer 0.15s linear both;
+          animation: showLayer 0.15s linear both;
+}
+.share.hide {
+  display: block;
+}
+.share.hide .mask {
+  -webkit-animation: hidePopup 0.15s linear both;
+          animation: hidePopup 0.15s linear both;
+}
+.share.hide .layer {
+  -webkit-animation: hideLayer 0.15s linear both;
+          animation: hideLayer 0.15s linear both;
+}
+.share.none {
+  display: none;
+}
+.share .mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 11;
+}
+.share .layer {
+  width: 92%;
+  position: fixed;
+  z-index: 12;
+  padding: 0 4%;
+  top: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.share .layer .list {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 10rpx 0 30rpx 0;
+}
+.share .layer .list .box {
+  width: 25%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.share .layer .list .box image {
+  width: 13.8vw;
+  height: 13.8vw;
+}
+.share .layer .list .box .title {
+  margin-top: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 26rpx;
+}
+.share .layer .btn {
+  width: 100%;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+  border-top: solid 1rpx #666666;
+}
+.share .layer .h1 {
+  width: 100%;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 34rpx;
+}
+

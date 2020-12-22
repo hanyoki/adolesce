@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  position: relative;
+  background-color: #fff;
+}
+.status {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: #f06c7a;
+  top: 0;
+}
+.header {
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #f06c7a;
+}
+.header .icon-btn {
+  width: 120rpx;
+  height: 60rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.header .icon-btn .icon {
+  color: #fff;
+  width: 60rpx;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 42rpx;
+}
+.place {
+  background-color: #f06c7a;
+  height: 100rpx;
+}
+.place-bottom {
+  height: 300rpx;
+}
+.user {
+  width: 92%;
+  padding: 0 4%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #f06c7a;
+  padding-bottom: 120rpx;
+}
+.user .left {
+  width: 20vw;
+  height: 20vw;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  margin-right: 20rpx;
+  border: solid 1rpx #fff;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.user .left image {
+  width: 20vw;
+  height: 20vw;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.user .right {
+  width: 100%;
+}
+.user .right .username {
+  font-size: 36rpx;
+  color: #fff;
+}
+.user .right .signature {
+  color: #eee;
+  font-size: 28rpx;
+}
+.user .erweima {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 5vw;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(#fbbb37), color-stop(105%, #fcf0d0));
+  background: -webkit-linear-gradient(right, #fbbb37 0%, #fcf0d0 105%);
+  background: linear-gradient(to left, #fbbb37 0%, #fcf0d0 105%);
+}
+.user .erweima .icon {
+  color: #7b6335;
+  font-size: 42rpx;
+}
+.order {
+  width: 84%;
+  margin: 30rpx 4% 30rpx 4%;
+  padding: 30rpx 4% 20rpx 4%;
+  background-color: #fff;
+  -webkit-box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+}
+.order .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: solid 1rpx #17e6a1;
+  padding-bottom: 10rpx;
+}
+.order .list .box {
+  width: 20%;
+}
+.order .list .box .img {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.order .list .box .img .icon {
+  font-size: 50rpx;
+  color: #464646;
+}
+.order .list .box .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 28rpx;
+  color: #3d3d3d;
+}
+.order .balance-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 10rpx 0;
+}
+.order .balance-info .left {
+  width: 75%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.order .balance-info .left .box {
+  width: 50%;
+  font-size: 28rpx;
+}
+.order .balance-info .left .box .num {
+  width: 100%;
+  height: 50rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  color: #f9a453;
+}
+.order .balance-info .left .box .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #3d3d3d;
+  font-size: 28rpx;
+}
+.order .balance-info .right {
+  border-left: solid 1rpx #17e6a1;
+  width: 25%;
+}
+.order .balance-info .right .box .img {
+  width: 100%;
+  height: 50rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+.order .balance-info .right .box .img .icon {
+  font-size: 45rpx;
+  color: #e78901;
+}
+.order .balance-info .right .box .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 28rpx;
+  color: #3d3d3d;
+}
+.VIP {
+  width: 84%;
+  margin: -65rpx auto 20rpx auto;
+  padding: 30rpx 4%;
+  background: -webkit-gradient(linear, right top, left top, from(#dea96d), to(#f6d59b));
+  background: -webkit-linear-gradient(right, #dea96d 0%, #f6d59b 100%);
+  background: linear-gradient(to left, #dea96d 0%, #f6d59b 100%);
+  -webkit-box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.2);
+          box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.VIP .img {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.VIP .img image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.VIP .title {
+  width: 100%;
+  color: #796335;
+  font-size: 30rpx;
+}
+.VIP .tis {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  color: #fcf0d0;
+  font-size: 26rpx;
+}
+.toolbar {
+  width: 92%;
+  margin: 0 4% 0 4%;
+  padding: 0 0 20rpx 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 25rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+}
+.toolbar .title {
+  padding-top: 10rpx;
+  margin: 0 0 10rpx 3%;
+  font-size: 30rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.toolbar .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.toolbar .list .box {
+  width: 25%;
+  margin-bottom: 30rpx;
+}
+.toolbar .list .box .img {
+  width: 23vw;
+  height: 10.5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.toolbar .list .box .img image {
+  width: 9vw;
+  height: 9vw;
+}
+.toolbar .list .box .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  font-size: 26rpx;
+  color: #3d3d3d;
+}
+

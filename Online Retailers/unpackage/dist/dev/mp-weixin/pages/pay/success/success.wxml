@@ -1,0 +1,1 @@
+<view><view class="icon"><image src="/static/img/success.png"></image></view><view class="tis">订单支付成功</view><view class="pay-amount">{{'支付金额:'+amount+'元'}}</view><view class="back"><view data-event-opts="{{[['tap',[['toUser',['$event']]]]]}}" class="btn" bindtap="__e">个人中心</view></view></view>

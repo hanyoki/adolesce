@@ -1,0 +1,91 @@
+<template>
+	<div class="content" :style="{height:statusBarHeight+44+'wx'}">
+		<!-- 此页面不知为何，不设置状态栏高度就布局异常 -->
+		<div class="status-bar" :style="{height:statusBarHeight+'wx'}"></div>
+		<div class="nav">
+			<text @click="toMsg" class="icon tongzhi">{{ iconTongzhi }}</text>
+			<text @click="toSetting" class="icon setting">{{ iconSetting }}</text>
+		</div>
+	</div>
+</template>
+<script> 
+export default {
+	data() {
+		return {
+			subNVue: uni.getCurrentSubNVue(),
+			iconSetting: '\ue64f',
+			iconTongzhi: '\ue729',
+			statusBarHeight:20
+		};
+	},
+	beforeCreate() {
+		const domModule = weex.requireModule('dom');
+		domModule.addRule('fontFace', {
+			fontFamily: 'iconfont',
+			src: "url('https://at.alicdn.com/t/font_1087442_fe5vigfwr5m.ttf')"
+		});
+	},
+	mounted() {
+		this.setStatusBarHeight();
+	},
+	methods: {
+		setStatusBarHeight(){
+			uni.getSystemInfo({
+				success: (res)=>{
+					console.log('设置状态栏高度：'+res.statusBarHeight);
+					this.statusBarHeight = res.statusBarHeight;
+				}
+			});
+		},
+		toMsg() {
+			uni.navigateTo({
+				url: '../../msg/msg'
+			});
+		},
+		toSetting() {
+			uni.navigateTo({
+				url: '../../user/setting/setting'
+			});
+		}
+	}
+};
+</script>
+<style>
+.icon {
+	font-family: iconfont;
+	font-size: 42px;
+}
+.content {
+	background-color: #f06c7a;
+	flex-direction: column;
+}
+.status-bar {
+	flex: 1;
+}
+
+.nav {
+	width: 710px;
+	height: 88px;
+	margin-left: 20px;
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.tongzhi,
+.setting {
+	width: 60px;
+	height: 88px;
+	text-align: center;
+	line-height: 88px;
+	color: #fff;
+	position: absolute;
+}
+.tongzhi {
+	right: 60px;
+}
+.setting {
+	right: 0px;
+}
+</style>

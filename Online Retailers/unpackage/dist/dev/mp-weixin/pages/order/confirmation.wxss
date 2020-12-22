@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.addr {
+  width: 86%;
+  padding: 20rpx 3%;
+  margin: 30rpx auto 20rpx auto;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.addr .icon {
+  width: 80rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.addr .icon image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.addr .tel-name {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 32rpx;
+}
+.addr .tel-name .tel {
+  margin-left: 40rpx;
+}
+.addr .addres {
+  width: 100%;
+  font-size: 26rpx;
+  color: #999;
+}
+.buy-list {
+  width: 86%;
+  padding: 10rpx 3%;
+  margin: 30rpx auto 20rpx auto;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+}
+.buy-list .row {
+  margin: 30rpx 0;
+}
+.buy-list .row .goods-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.buy-list .row .goods-info .img {
+  width: 22vw;
+  height: 22vw;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  margin-right: 10rpx;
+}
+.buy-list .row .goods-info .img image {
+  width: 22vw;
+  height: 22vw;
+}
+.buy-list .row .goods-info .info {
+  width: 100%;
+  height: 22vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: relative;
+}
+.buy-list .row .goods-info .info .title {
+  width: 100%;
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.buy-list .row .goods-info .info .spec {
+  font-size: 22rpx;
+  background-color: #f3f3f3;
+  color: #a7a7a7;
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 10rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+  margin-bottom: 20vw;
+}
+.buy-list .row .goods-info .info .price-number {
+  position: absolute;
+  width: 100%;
+  bottom: 0rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  font-size: 28rpx;
+  height: 40rpx;
+}
+.buy-list .row .goods-info .info .price-number .price {
+  color: #f06c7a;
+}
+.buy-list .row .goods-info .info .price-number .number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.order {
+  width: 86%;
+  padding: 10rpx 3%;
+  margin: 30rpx auto 20rpx auto;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+}
+.order .row {
+  margin: 20rpx 0;
+  height: 40rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.order .row .left {
+  font-size: 28rpx;
+}
+.order .row .right {
+  margin-left: 40rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.order .row .right input {
+  font-size: 26rpx;
+  color: #999;
+}
+.blck {
+  width: 100%;
+  height: 100rpx;
+}
+.footer {
+  width: 92%;
+  padding: 0 4%;
+  background-color: #fbfbfb;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 5;
+}
+.footer .settlement {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer .settlement .sum {
+  width: 50%;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.footer .settlement .sum .money {
+  font-weight: 600;
+}
+.footer .settlement .btn {
+  padding: 0 30rpx;
+  height: 60rpx;
+  background-color: #f06c7a;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 30rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
+}
+.detail {
+  width: 86%;
+  padding: 10rpx 3%;
+  margin: 30rpx auto 20rpx auto;
+  -webkit-box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
+}
+.detail .row {
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.detail .row .nominal {
+  font-size: 28rpx;
+}
+.detail .row .content {
+  font-size: 26rpx;
+  color: #f06c7a;
+}
+

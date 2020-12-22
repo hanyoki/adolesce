@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "编辑收件人地址",
+  "titleBarColor": "#ffffff",
+  "usingComponents": {
+    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
+  }
+}
